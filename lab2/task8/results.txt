@@ -1,0 +1,8 @@
+Input signal a:
+[1 4 2]
+
+Impulse response b:
+[1 2 3 4 5 4 3 3 2 2 1 1]
+
+Convolution result c_full (length 14):
+[ 1  6 13 20 27 32 29 23 20 16 13  9  6  2]

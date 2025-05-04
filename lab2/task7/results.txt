@@ -1,0 +1,48 @@
+================================================================================
+Signal Processing Lab - Comprehensive Convolution Method Comparison
+================================================================================
+Date and Time: 2025-05-04 23:55:46
+Python version: 3.12.8 (main, Dec  3 2024, 18:42:41) [GCC 13.3.0]
+NumPy version: 1.26.4
+================================================================================
+Starting comprehensive convolution method comparison at 2025-05-04 23:55:46
+================================================================================
+
+Test 1/3: Signal size = 131072
+--------------------------------------------------------------------------------
+Generating signals of length 131072...
+Measuring time for FFT-based convolution of signals with length 131072...
+Using FFT length of 262144 (next power of 2 >= 262143)
+FFT-based convolution completed in 0.033417 seconds
+Measuring time for direct convolution of signals with length 131072...
+Direct convolution completed in 3.837211 seconds
+Maximum absolute error between methods: 3.4924596548080444e-10
+FFT method is 114.83x faster than direct convolution
+
+Test 2/3: Signal size = 262144
+--------------------------------------------------------------------------------
+Generating signals of length 262144...
+Measuring time for FFT-based convolution of signals with length 262144...
+Using FFT length of 524288 (next power of 2 >= 524287)
+FFT-based convolution completed in 0.073232 seconds
+Measuring time for direct convolution of signals with length 262144...
+Direct convolution completed in 13.713555 seconds
+Maximum absolute error between methods: 6.984919309616089e-10
+FFT method is 187.26x faster than direct convolution
+
+Test 3/3: Signal size = 524288
+--------------------------------------------------------------------------------
+Generating signals of length 524288...
+Measuring time for FFT-based convolution of signals with length 524288...
+Using FFT length of 1048576 (next power of 2 >= 1048575)
+FFT-based convolution completed in 0.157581 seconds
+
+Summary of Convolution Method Performance:
+================================================================================
+Signal Size  Direct Time (s)  FFT Time (s)     Speedup    FFT Length  
+--------------------------------------------------------------------------------
+131072       3.837211         0.033417         114.83    x 262144      
+262144       13.713555        0.073232         187.26    x 524288      
+524288       skipped          0.157581         N/A        1048576     
+================================================================================
+Completed comprehensive convolution method comparison at 2025-05-04 23:56:07

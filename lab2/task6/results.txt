@@ -1,0 +1,50 @@
+Comparing convolution methods for signals of length 1024...
+Signal lengths: a=1024, b=1024
+Theoretical convolution length: 2047
+FFT length (next power of 2): 2048
+Measuring time for direct convolution...
+Direct convolution completed in 0.000206 seconds
+Measuring time for FFT-based convolution...
+FFT-based convolution completed in 0.000205 seconds
+FFT method is 1.00x faster than direct convolution
+Maximum absolute error: 3.183231456205249e-12
+
+Comparing convolution methods for signals of length 4096...
+Signal lengths: a=4096, b=4096
+Theoretical convolution length: 8191
+FFT length (next power of 2): 8192
+Measuring time for direct convolution...
+Direct convolution completed in 0.003434 seconds
+Measuring time for FFT-based convolution...
+FFT-based convolution completed in 0.000811 seconds
+FFT method is 4.24x faster than direct convolution
+Maximum absolute error: 2.000888343900442e-11
+
+Comparing convolution methods for signals of length 16384...
+Signal lengths: a=16384, b=16384
+Theoretical convolution length: 32767
+FFT length (next power of 2): 32768
+Measuring time for direct convolution...
+Direct convolution completed in 0.378002 seconds
+Measuring time for FFT-based convolution...
+FFT-based convolution completed in 0.002515 seconds
+FFT method is 150.28x faster than direct convolution
+Maximum absolute error: 7.275957614183426e-11
+
+Comparing convolution methods for signals of length 65536...
+Signal lengths: a=65536, b=65536
+Theoretical convolution length: 131071
+FFT length (next power of 2): 131072
+Direct convolution would be too slow for this signal size, skipping...
+Measuring time for FFT-based convolution...
+FFT-based convolution completed in 0.015602 seconds
+
+Summary of Convolution Method Performance:
+------------------------------------------------------------
+Signal Size     Direct Time (s)      FFT Time (s)         Speedup   
+------------------------------------------------------------
+1024            0.000206             0.000205             1.00      x
+4096            0.003434             0.000811             4.24      x
+16384           0.378002             0.002515             150.28    x
+65536           too slow             0.015602             -         
+------------------------------------------------------------

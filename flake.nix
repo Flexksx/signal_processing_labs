@@ -30,7 +30,8 @@
             pythonPackages.numpy
             pythonPackages.plotly
             pythonPackages.black
-                      ];
+            pythonPackages.matplotlib
+          ];
 
           shellHook = ''
             echo "Welcome to the development shell for ${system}!"
@@ -44,6 +45,7 @@
             python-dotenv
             plotly
             black
+            matplotlib
           ]
         );
       }
